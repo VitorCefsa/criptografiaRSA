@@ -19,19 +19,14 @@ O sistema é composto por dois scripts principais:
 
 ### Funções:
 
-- **is_prime(n, k=40)**:
   - Testa se um número `n` é primo usando o teste de Miller-Rabin. Este teste é probabilístico e é executado `k` vezes para aumentar a certeza do resultado.
 
-- **generate_prime(bits)**:
   - Gera um número primo de `bits` bits. O número gerado será ímpar e de tamanho específico, e passa pelo teste de primalidade.
 
-- **generate_keys()**:
   - Gera um par de chaves RSA: pública e privada. A chave pública é composta por `(n, e)` e a chave privada é composta por `(n, d)`. O algoritmo utiliza números primos gerados com 512 bits cada para formar a chave RSA.
 
-- **encrypt(message, e, n)**:
   - Criptografa uma mensagem utilizando a chave pública `(e, n)` através do algoritmo RSA.
 
-- **decrypt(cipher, d, n)**:
   - Descriptografa uma mensagem utilizando a chave privada `(d, n)`.
 
 ### Fluxo:
@@ -48,19 +43,14 @@ O sistema é composto por dois scripts principais:
 
 ### Funções:
 
-- **is_prime(n, k=40)**:
   - Similar ao cliente, testa se um número `n` é primo usando o teste de Miller-Rabin.
 
-- **generate_prime(bits)**:
   - Gera números primos de `bits` bits para uso na geração das chaves RSA.
 
-- **generate_keys()**:
   - Gera um par de chaves RSA para o servidor. O processo é similar ao do cliente, com a criação de números primos e o cálculo das chaves.
 
-- **encrypt(message, e, n)**:
   - Criptografa uma mensagem utilizando a chave pública `(e, n)`.
 
-- **decrypt(cipher, d, n)**:
   - Descriptografa uma mensagem utilizando a chave privada `(d, n)`.
 
 ### Fluxo:
